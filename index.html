@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#641b2b" />
+    <title>دعوة حفل الخطوبة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- شاشة فتح الدعوة -->
+    <section class="welcome-screen" id="welcomeScreen">
+      <div class="welcome-card">
+        <div class="mini-flower flower-red">✿</div>
+        <p class="welcome-kicker">بكل الحب ندعوكم</p>
+        <h1>حضور حفل الخطوبه</h1>
+        <p class="welcome-copy">يسعدنا مشاركتكم فرحتنا</p>
+        <button class="open-button" id="openInvitation">
+          افتح الدعوة <span>♡</span>
+        </button>
+        <div class="mini-flower flower-white">✿</div>
+      </div>
+    </section>
+
+    <main class="page-shell" id="mainInvitation">
+      <img
+        class="floral-corner floral-top-left"
+        src="flowers.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="floral-corner floral-bottom-right"
+        src="flowers.svg"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <section class="invitation-card">
+        <div class="top-label">دعوة لحضور حفل خطوبة</div>
+        <div class="ornament"><span></span><b>❧</b><span></span></div>
+
+        <p class="intro">بسم الله الرحمن الرحيم</p>
+        <p class="invitation-text">
+          بكل الحب والسعادة، نتشرف بدعوتكم لحضور حفل الخطوبه<br />
+        </p>
+
+        <div class="names-area">
+          <span class="name-label">البشمهندس</span>
+          <h1 id="groomName">احمد</h1>
+          <div class="ampersand">&amp;</div>
+          <span class="name-label">الدكتورة</span>
+          <h1 id="brideName">ايمان</h1>
+        </div>
+
+        <p class="closing-line">وجودكم يكمل فرحتنا ويزيدها بهجة</p>
+
+        <div class="details-grid">
+          <div class="detail">
+            <span class="detail-icon">♡</span>
+            <span class="detail-title">اليوم والتاريخ</span>
+            <strong id="eventDateText">السبت، 14 نوفمبر 2026</strong>
+          </div>
+          <div class="detail">
+            <span class="detail-icon">◷</span>
+            <span class="detail-title">موعدنا</span>
+            <strong id="eventTime">الساعة 6:00 مساءً</strong>
+          </div>
+          <div class="detail venue-detail">
+            <span class="detail-icon">⌖</span>
+            <span class="detail-title">المكان</span>
+            <strong id="venueName"
+              >منزل والد العروسه (الدكتور فتحى الدماصى )</strong
+            >
+            <span class="venue-address" id="venueAddress">.</span>
+            <a
+              class="map-link"
+              id="mapLink"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              >عرض الموقع على الخريطة ↗</a
+            >
+          </div>
+        </div>
+
+        <div class="countdown-section">
+          <p class="countdown-title">باقي على فرحتنا</p>
+          <div class="countdown" aria-live="polite">
+            <div><strong id="days">00</strong><span>يوم</span></div>
+            <div><strong id="hours">00</strong><span>ساعة</span></div>
+            <div><strong id="minutes">00</strong><span>دقيقة</span></div>
+            <div><strong id="seconds">00</strong><span>ثانية</span></div>
+          </div>
+          <p class="countdown-note" id="countdownNote"></p>
+        </div>
+
+        <div class="actions">
+          <a class="primary-button" id="calendarButton" href="#"
+            >أضف الموعد للتقويم</a
+          >
+          <button class="secondary-button" id="shareButton" type="button">
+            شارك الدعوة مع أصحابك
+          </button>
+        </div>
+
+        <p class="final-note">ننتظركم بكل الحب ♡</p>
+        <div class="bottom-ornament">✦ &nbsp; ✿ &nbsp; ✦</div>
+      </section>
+
+      <footer>صُنعت هذه الدعوة بكل الحب</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
